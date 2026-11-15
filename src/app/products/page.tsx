@@ -1,6 +1,6 @@
-import Link from "next/link";
 import { StoreLayout } from "@/components/store-layout";
 import { ProductGrid } from "@/components/product-grid";
+import { ProductCategoryFilters } from "@/components/product-category-filters";
 import { getStoreCategories, getStoreProducts } from "@/lib/store-queries";
 
 export default async function ProductsPage() {
@@ -17,14 +17,7 @@ export default async function ProductsPage() {
           <h1>Little things for <em>slow mornings.</em></h1>
           <p>Thoughtful coffee and lovely tools for your favorite part of the day.</p>
         </div>
-        <nav className="collection-pills" aria-label="Product collections">
-          <Link href="/products">Everything</Link>
-          {categories.map((category) => (
-            <Link href={`/categories/${category.slug}`} key={category.slug}>
-              {category.name}
-            </Link>
-          ))}
-        </nav>
+        <ProductCategoryFilters categories={categories} />
         <ProductGrid items={products} />
       </main>
     </StoreLayout>

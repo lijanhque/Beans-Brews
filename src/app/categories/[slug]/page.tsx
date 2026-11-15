@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { StoreLayout } from "@/components/store-layout";
 import { ProductGrid } from "@/components/product-grid";
+import { ProductCategoryFilters } from "@/components/product-category-filters";
 import { getStoreCategories, getStoreProducts } from "@/lib/store-queries";
 
 export default async function CategoryPage({
@@ -22,6 +23,7 @@ export default async function CategoryPage({
           <h1>{category.name}, <em>made lovely.</em></h1>
           <p>{category.note}</p>
         </div>
+        <ProductCategoryFilters activeSlug={category.slug} categories={categories} />
         <ProductGrid items={products.filter((product) => product.collection === slug)} />
       </main>
     </StoreLayout>
