@@ -1,9 +1,11 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { StoreLayout } from "@/components/store-layout";
-import { categories } from "@/lib/store-data";
+import { getStoreCategories } from "@/lib/store-queries";
 
-export default function CategoriesPage() {
+export default async function CategoriesPage() {
+  const categories = await getStoreCategories();
+
   return (
     <StoreLayout>
       <main className="store-page">

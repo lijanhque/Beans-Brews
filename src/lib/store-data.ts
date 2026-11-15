@@ -97,6 +97,38 @@ export const categories = [
     image:
       "https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?auto=format&fit=crop&w=1000&q=85",
   },
+  {
+    slug: "barista-tools",
+    name: "Barista Tools",
+    note: "The little tools that make every cup feel considered.",
+    number: "04",
+    image:
+      "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1000&q=85",
+  },
+  {
+    slug: "cleaning-maintenance-tools",
+    name: "Cleaning & Maintenance Tools",
+    note: "Keep your coffee gear clean and ready for the next brew.",
+    number: "05",
+    image:
+      "https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&w=1000&q=85",
+  },
+  {
+    slug: "gift-boxes-coffee-sets",
+    name: "Gift Boxes & Coffee Sets",
+    note: "Thoughtful coffee gifts and sets for sharing.",
+    number: "06",
+    image:
+      "https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1000&q=85",
+  },
+  {
+    slug: "coffee-tools-equipment",
+    name: "Coffee Tools & Equipment",
+    note: "Dependable equipment for a better brew at home.",
+    number: "07",
+    image:
+      "https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&w=1000&q=85",
+  },
 ];
 
 export const journalEntries = [

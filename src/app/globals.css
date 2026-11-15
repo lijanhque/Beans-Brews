@@ -2360,6 +2360,12 @@ button {
   color: var(--cream);
 }
 
+.collection-pills a[aria-current="page"] {
+  border-color: var(--espresso);
+  background: var(--espresso);
+  color: var(--cream);
+}
+
 .route-product-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
