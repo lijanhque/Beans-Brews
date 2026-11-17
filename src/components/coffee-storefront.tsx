@@ -340,91 +340,14 @@ export default function CoffeeStorefront({
         </a>
       </section>
 
-      <section
-        className="catering-banner-section section-shell"
-        aria-label="Coffee catering and professional barista support"
-      >
-        <Image
-          className="catering-banner"
-          src="/home-banner.jpg"
-          alt="Premium coffee catering and professional barista support for corporate events, weddings, exhibitions, and private parties. Booking: 01791140842."
-          width={1622}
-          height={970}
-          sizes="(max-width: 760px) calc(100vw - 48px), 86vw"
-        />
-      </section>
+      
 
-      {banners.length > 0 && (
-        <section className="home-banners section-shell" aria-label="Store offers">
-          {banners.map((banner) => (
-            <Link
-              className="home-banner-card"
-              href={banner.href || "/products"}
-              key={banner.id}
-              style={{
-                backgroundImage: `linear-gradient(90deg, rgba(48,39,31,.65), rgba(48,39,31,.05)), url("${banner.image}")`,
-              }}
-            >
-              <span className="eyebrow">A LITTLE SOMETHING FOR YOU</span>
-              <strong>{banner.title}</strong>
-              <span>Explore the offer <ArrowRight size={15} /></span>
-            </Link>
-          ))}
-        </section>
-      )}
 
-      <div className="ticker" aria-label="Small batch, big heart, always fresh">
-        <div className="ticker-track" aria-hidden="true">
-          {Array.from({ length: 2 }, (_, row) => (
-            <span className="ticker-group" key={row}>
-              <span>SMALL BATCH</span>
-              <Sparkles size={15} />
-              <span>BIG HEART</span>
-              <Sparkles size={15} />
-              <span>ALWAYS FRESH</span>
-              <Sparkles size={15} />
-              <span>NEVER IN A RUSH</span>
-              <Sparkles size={15} />
-            </span>
-          ))}
-        </div>
-      </div>
-
-      <section className="categories-section section-shell" id="categories">
-        <div className="section-heading">
-          <div>
-            <span className="eyebrow">THE GOOD STUFF, RIGHT THIS WAY</span>
-            <h2>For the love of a good <em>cup.</em></h2>
-          </div>
-          <Link className="text-link" href="/products">
-            Browse all the good stuff <ArrowRight size={16} />
-          </Link>
-        </div>
-        <div className="category-grid">
-          {categories.map((category) => (
-            <Link
-              className="category-card"
-              href={`/categories/${category.slug}`}
-              key={category.number}
-              style={{ backgroundImage: `url("${category.image}")` }}
-            >
-              <span className="category-number">{category.number}</span>
-              <span className="category-arrow">
-                <ArrowUpRight size={17} />
-              </span>
-              <span className="category-caption">
-                <small>{category.note}</small>
-                <strong>{category.name}</strong>
-              </span>
-            </Link>
-          ))}
-        </div>
-      </section>
 
       <section className="products-section section-shell" id="shop">
         <div className="section-heading">
           <div>
-            <span className="eyebrow">THE ONES EVERYONE LOVES</span>
+            <span className="eyebrow">BARISTA TOOLS </span>
             <h2>A few very good <em>things.</em></h2>
           </div>
           <div className="product-arrows">
